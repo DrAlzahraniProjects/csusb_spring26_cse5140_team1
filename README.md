@@ -105,10 +105,14 @@ This repository contains all source code, experiments, documentation, and evalua
 
 ## Team Members
 
-* Project Manager: David Forero
-* Team Member 1
-* Team Member 2
-* Team Member 3
+| No. | Name             | Role                                    |
+| --- | ---------------- | --------------------------------------- |
+| 1   | Dominic Arrezola | Evaluation Specialist                   |
+| 2   | Iran Bojorquez   | Research Assistant & Documentation Lead |
+| 3   | Jean Bustamante  | Visualization & QA Specialist           |
+| 4   | Nadir Esmail     | Neural Network Specialist               |
+| 5   | Brandon Kirk     | EA Specialist                           |
+| 6   | David Forero     | Project Manager                         |
 
 ---
 
