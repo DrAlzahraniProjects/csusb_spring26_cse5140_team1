@@ -20,48 +20,44 @@ Docker is not used for this project.
 
 ---
 
-**Step 1: Clone the Repository**
-
-Clone the GitHub repository to your local machine:
-
-```bash
-git clone https://github.com/DrAlzahraniProjects/csusb_spring26_cse5140_team1.git
-```
-
----
-
-## Step 2: Navigate to the Repository
-
-Change to the cloned repository directory:
-
-```bash
-cd csusb_spring26_cse5140_team1
-```
-
----
-
-## Step 3: Pull the Latest Version
-
-Update the repository to the latest version:
-
-```bash
-git pull origin main
-```
-
----
-
-## Step 4: Launch **NRP JupyterHub**
+## Step 1: Launch **NRP JupyterHub** and Clone the Repository
 
 1. Log in to **NRP.ai**.
 2. Select the **instructor-provided namespace**.
 3. Launch a Jupyter Notebook using the **NRP Stack PyTorch2 environment**.
-4. Clone this repository inside your NRP workspace (or upload the repository files).
-
-All reported results must be generated inside **NRP** to ensure **fairness and reproducibility**.
+4. Open a **Terminal** inside JupyterLab.
+5. Clone the repository directly inside NRP:
+```bash
+git clone https://github.com/DrAlzahraniProjects/csusb_spring26_cse5140_team1.git
+```
+6. Navigate into the repository directory:
+```bash
+cd csusb_spring26_cse5140_team1
+```
+7. Ensure the repository is up to date:
+```bash
+git pull origin main
+```
+Cloning directly inside **NRP JupyterHub** ensures the full folder structure is preserved and avoids manual upload issues.
 
 ---
 
-## Step 5: Run the Notebooks
+## Step 2: Dataset Access
+
+The dataset (~151 MB) is not stored directly in the repository.
+
+To ensure **reproducibility** without exceeding GitHub size limits:
+
+- The dataset is hosted as a **GitHub Release asset (v1.0)**.
+- The notebook automatically downloads the dataset if it is not already present.
+- The file is saved locally inside the **data/** directory using a relative path.
+- No manual upload or **Kaggle API access** is required.
+
+The contents of the **data/** directory are excluded via **.gitignore** to prevent large files from being committed to version control.
+
+---
+
+## Step 3: Run the Notebooks
 
 In Jupyter, navigate to the **notebooks/** directory.
 
@@ -80,7 +76,7 @@ Each notebook must execute **end-to-end without manual intervention**.
 
 ---
 
-## Step 6: Data Handling and Splitting
+## Step 4: Data Handling and Splitting
 
 - The dataset is limited to the first **1,000,000 rows**.
 - The data is shuffled using a **fixed random seed**.
@@ -90,22 +86,7 @@ Each notebook must execute **end-to-end without manual intervention**.
 
 ---
 
-## Step 7: Dataset Access
-
-The dataset (~151 MB) is not stored directly in the repository.
-
-To ensure **reproducibility** without exceeding GitHub size limits:
-
-- The dataset is hosted as a **GitHub Release asset (v1.0)**.
-- The notebook automatically downloads the dataset if it is not already present.
-- The file is saved locally inside the **data/** directory using a relative path.
-- No manual upload or **Kaggle API access** is required.
-
-The contents of the **data/** directory are excluded via **.gitignore** to prevent large files from being committed to version control.
-
----
-
-## Step 8: Environment Verification
+## Step 5: Environment Verification
 
 Ensure that:
 
@@ -129,3 +110,4 @@ This repository contains the full **reproducible implementation** required for:
 Spring 2026  
 
 All notebooks execute end-to-end on **NRP JupyterHub using the PyTorch2 stack**.
+
