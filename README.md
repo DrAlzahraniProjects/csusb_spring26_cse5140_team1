@@ -120,6 +120,9 @@ Target Variable: `trip_duration` (seconds)
 - Feature importance (SHAP or permutation importance)
 - Metrics: RMSE, MAE, R²
 
+**Baseline Technical Summary**
+- A 50% final holdout is required to provide a truly unbiased estimate of model performance, since it is never used during training, feature decisions, or hyperparameter tuning. Keeping this holdout untouched prevents leakage and reduces the risk of “overfitting to the benchmark” through repeated iteration on the same data. The remaining 50% is split into train/validation so we can develop and sanity-check the pipeline while still preserving a strong final evaluation set. We apply a log1p(target) transformation because taxi outcomes (e.g., fares or trip totals) are typically right-skewed, and log scaling stabilizes variance, reduces the influence of extreme values, and often improves linear model fit. Predictions are then converted back to the original scale using the correct inverse (expm1) when needed for interpretation or downstream metrics. Ridge regression is an appropriate baseline because it is fast, stable on high-dimensional feature sets, and its L2 regularization helps control multicollinearity and reduces overfitting relative to ordinary least squares. Finally, R² may be modest for taxi data because outcomes are driven by many unobserved factors (traffic, weather, events, routing choices, pickup/dropoff noise), and even strong models face an inherent ceiling without richer signals.
+
 ---
 
 ## Phase 2: Evolutionary Algorithms (EA)
@@ -136,6 +139,7 @@ Target Variable: `trip_duration` (seconds)
 - Execution under fixed computational budget
 
 ---
+
 
 ## Phase 3: Fuzzy Systems (FS)
 
