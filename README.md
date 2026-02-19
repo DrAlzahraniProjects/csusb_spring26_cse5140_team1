@@ -23,7 +23,7 @@ All final experiments must be executed on **NRP.ai using the NRP Stack PyTorch2 
 
 Clone the GitHub repository to your local machine:
 
-git clone https://github.com/YOUR_USERNAME/csusb_spring26_cse5140_team1.git
+```git clone https://github.com/DrAlzahraniProjects/csusb_spring26_cse5140_team1.git```
 
 
 ---
@@ -32,7 +32,7 @@ git clone https://github.com/YOUR_USERNAME/csusb_spring26_cse5140_team1.git
 
 Change to the cloned repository directory:
 
-cd csusb_spring26_cse5140_team1
+```cd csusb_spring26_cse5140_team1```
 
 
 ---
@@ -41,7 +41,7 @@ cd csusb_spring26_cse5140_team1
 
 Update the repository to the latest version:
 
-git pull origin main
+```git pull origin main```
 
 
 ---
