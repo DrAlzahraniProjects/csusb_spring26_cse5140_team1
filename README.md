@@ -1,7 +1,9 @@
 # Comparative Implementation of Neural Networks, Evolutionary Algorithms, and Fuzzy Systems for Tabular Prediction
 
 💡 **Note:**  
-If you are new to Neural Networks (NN), Evolutionary Algorithms (EA), Fuzzy Systems (FS), or NRP JupyterHub, review the course materials before you start.
+If you are new to Neural Networks (NN), Evolutionary Algorithms (EA), Fuzzy Systems (FS), or NRP JupyterHub, review the course **Guide** before you start.
+
+This project compares three different Artificial Intelligence methods to see how well they predict values from table-style data.
 
 ---
 
@@ -9,11 +11,11 @@ If you are new to Neural Networks (NN), Evolutionary Algorithms (EA), Fuzzy Syst
 
 Before you begin, ensure you have the following:
 
-- **Git:** Install Git from its official website.
-- **NRP.ai Account:** Access to the instructor-managed namespace.
-- **NRP Stack:** PyTorch2 environment (required).
+- **[Git](https://git-scm.com/downloads)**: Install Git on your computer.
+- **[NRP.ai Account](https://nrp.ai/)**: Access to the instructor-managed namespace.
+- **[NRP Stack (PyTorch2 environment)](https://nrp.ai/)**: You must use the required PyTorch2 environment.
 - **Linux/MacOS:** No extra setup needed.
-- **Windows:** Use a modern browser to access NRP JupyterHub.
+- **[Windows](https://www.microsoft.com/en-us/software-download/windows11)**: Use a modern browser to access NRP JupyterHub.
 
 All final experiments must be executed on **NRP JupyterHub using the required PyTorch2 stack**.  
 Docker is not used for this project.
@@ -38,29 +40,27 @@ cd csusb_spring26_cse5140_team1
 ```bash
 git pull origin main
 ```
-Cloning directly inside **NRP JupyterHub** ensures the full folder structure is preserved and avoids manual upload issues.
+Cloning inside **NRP JupyterHub** keeps the project organized and prevents file upload problems.
 
 ---
 
 ## Step 2: Dataset Access
 
-The dataset (~151 MB) is not stored directly in the repository.
+The dataset (about 151 MB) is too large to store directly inside the repository.
+To keep everything organized and reproducible:
+- The dataset is stored as a **GitHub Release asset (v1.0)**.
+- The notebook automatically downloads it if it is missing.
+- The file is saved inside the **data/** folder.
+- You do not need to manually upload anything.
+- You do not need Kaggle API access.
 
-To ensure **reproducibility** without exceeding GitHub size limits:
-
-- The dataset is hosted as a **GitHub Release asset (v1.0)**.
-- The notebook automatically downloads the dataset if it is not already present.
-- The file is saved locally inside the **data/** directory using a relative path.
-- No manual upload or **Kaggle API access** is required.
-
-The contents of the **data/** directory are excluded via **.gitignore** to prevent large files from being committed to version control.
+The **data/** folder is excluded using **.gitignore** so large files are not uploaded to GitHub by mistake.
 
 ---
 
 ## Step 3: Run the Notebooks
 
-In Jupyter, navigate to the **notebooks/** directory.
-
+In Jupyter, navigate to the **notebooks/** folder.
 Run the notebooks in the following order:
 
 1. **NN_Analysis.ipynb**  
@@ -68,46 +68,51 @@ Run the notebooks in the following order:
 3. **FS_Model.ipynb**  
 4. **Final_Comparison.ipynb**  
 
-Open each notebook.
+For each notebook:
 
-Select **Run All Cells** to execute the code.
+- Open it
+- Click **Run All Cells**
 
-Each notebook must execute **end-to-end without manual intervention**.
+Each notebook must run from start to finish without stopping or requiring manual changes.
 
 ---
 
 ## Step 4: Data Handling and Splitting
 
-- The dataset is limited to the first **1,000,000 rows**.
-- The data is shuffled using a **fixed random seed**.
-- A strict **50% holdout set** is reserved and never accessed during model tuning.
-- The remaining 50% is used for **development (training and validation)**.
-- Final evaluation is performed once on the held-out **50% test set**.
+To make the experiment fair and organized:
+
+- Only the first **1,000,000** rows of the dataset are used.
+- The data is shuffled using a **fixed random seed** so results stay consistent.
+- **50% of the data is saved as a final holdout** set and never used during training.
+- The remaining 50% is used for training and validation.
+- The holdout set is tested **only once at the end**.
+
+This keeps the final results honest and unbiased.
 
 ---
 
 ## Step 5: Environment Verification
 
-Ensure that:
+Make sure that:
 
-- All final results are generated on **NRP**.
-- **Fixed random seeds** are used.
-- **environment_summary.md** documents:
-  - **NRP image used**
-  - **Python version**
-  - **Key library versions (pip freeze)**
+- All final results are generated on NRP.
+- Fixed random seeds are used.
+- The file **environment_summary.md** includes:
+  - The NRP image used
+  - The Python version
+  - The main library versions (using pip freeze)
 
-💡 **Note:**  
-All comparative experiments and reported metrics must originate from execution within the **NRP JupyterHub environment**.
+💡 **Important**:
+All reported results must come from running the project inside **NRP JupyterHub**.
 
 ---
 
 ## About
 
-This repository contains the full **reproducible implementation** required for:
+This repository contains the complete and reproducible implementation for:
 
-**CSE 5140 – Computational Intelligence**  
-Spring 2026  
+CSE 5140 – **Computational Intelligence**
+Spring 2026
 
-All notebooks execute end-to-end on **NRP JupyterHub using the PyTorch2 stack**.
+All notebooks are designed to run fully on **NRP JupyterHub** using the **PyTorch2** stack.
 
