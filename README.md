@@ -24,7 +24,7 @@ Docker is not used for this project.
 
 ## Step 1: Launch **NRP JupyterHub** and Clone the Repository
 
-1. Log in to **NRP.ai**.
+1. Log in to **[NRP.ai](https://nrp.ai/)**.
 2. Select the **instructor-provided namespace**.
 3. Launch a Jupyter Notebook using the **NRP Stack PyTorch2 environment**.
 4. Open a **Terminal** inside JupyterLab.
