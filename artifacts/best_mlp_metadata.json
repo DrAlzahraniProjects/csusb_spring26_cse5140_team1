@@ -1,0 +1,31 @@
+{
+  "saved_path": "../artifacts/best_mlp_model.pt",
+  "timestamp": "2026-03-02T04:21:00.267558",
+  "model_cfg": {
+    "in_dim": 14,
+    "layers": [
+      512,
+      256
+    ],
+    "dropout": 0.1
+  },
+  "n_features": 14,
+  "clip_min": -2.0,
+  "clip_max": 13.0,
+  "seed": 42,
+  "best_row_from_search": {
+    "trial_id": 6.0,
+    "layers": "(512, 256)",
+    "dropout": 0.1,
+    "lr": 0.0005,
+    "weight_decay": 1e-05,
+    "batch_size": 2048.0,
+    "epochs_cap": 25.0,
+    "patience": 4.0,
+    "best_val_rmse_log": 0.4474143957774766,
+    "val_rmse": 5912.847290263061,
+    "val_mae": 341.52972431226095,
+    "val_r2": 0.009601137399400939,
+    "history_csv": "../artifacts/trial_logs/trial_6_history.csv"
+  }
+}
