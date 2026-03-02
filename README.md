@@ -5,6 +5,29 @@ If you are new to Neural Networks (NN), Evolutionary Algorithms (EA), Fuzzy Syst
 
 This project compares three different Artificial Intelligence methods to see how well they predict values from table-style data.
 
+
+---
+
+## Quick Start (For Graders)
+
+1. Log into NRP.ai.
+2. Launch PyTorch2 Jupyter environment.
+3. Clone this repository.
+4. Navigate to notebooks/.
+5. Run notebooks in this exact order:
+
+   1) NN_Analysis.ipynb
+   2) EA_Optimization.ipynb
+   3) FS_Model.ipynb
+   4) Final_Comparison.ipynb
+
+6. Each notebook runs end-to-end without modification.
+7. All results are generated automatically.
+
+No dataset upload is required.
+No manual configuration is required.
+
+
 ---
 
 **Prerequisites**
@@ -32,6 +55,27 @@ Docker is not used for this project.
 ```bash
 git clone https://github.com/DrAlzahraniProjects/csusb_spring26_cse5140_team1.git
 ```
+## Repository Structure
+
+After cloning, your folder should look like this:
+
+csusb_spring26_cse5140_team1/
+│
+├── notebooks/
+│   ├── NN_Analysis.ipynb
+│   ├── EA_Optimization.ipynb
+│   ├── FS_Model.ipynb
+│   └── Final_Comparison.ipynb
+│
+├── data/                (auto-created if missing)
+├── environment_summary.md
+├── README.md
+└── requirements.txt (if applicable)
+
+⚠️ Do not manually place files inside `data/`.
+The dataset will download automatically when running NN_Analysis.ipynb.
+
+
 6. Navigate into the repository directory:
 ```bash
 cd csusb_spring26_cse5140_team1
@@ -79,16 +123,16 @@ Each notebook must run from start to finish without stopping or requiring manual
 
 ## Step 4: Data Handling and Splitting
 
-To make the experiment fair and organized:
+To ensure fairness and reproducibility:
 
-- Only the first **1,000,000** rows of the dataset are used.
-- The data is shuffled using a **fixed random seed** so results stay consistent.
-- **50% of the data is saved as a final holdout** set and never used during training.
-- The remaining 50% is used for training and validation.
-- The holdout set is tested **only once at the end**.
-
-This keeps the final results honest and unbiased.
-
+- The dataset is limited to the first 1,000,000 rows.
+- The data is shuffled using a fixed random seed.
+- The dataset is split into:
+  - 70% Training
+  - 15% Validation
+  - 15% Testing
+- The test set is accessed only once for final evaluation.
+- Validation data is used strictly for tuning.
 ---
 
 ## Step 5: Environment Verification
@@ -101,6 +145,39 @@ Make sure that:
   - The NRP image used
   - The Python version
   - The main library versions (using pip freeze)
+
+
+ ## Expected Runtime (NRP Environment)
+
+All experiments must be run on the NRP PyTorch2 stack.
+
+Approximate runtime (may vary slightly):
+
+- NN_Analysis.ipynb: ~10–20 minutes
+- EA_Optimization.ipynb: ~20–40 minutes (depends on compute budget)
+- FS_Model.ipynb: ~5–10 minutes
+- Final_Comparison.ipynb: ~5 minutes
+
+Total runtime for full project execution: ~45–75 minutes.
+
+No manual tuning or interaction is required during execution.
+Simply click "Run All Cells" for each notebook.
+---
+
+## Compute Budget Transparency
+
+The EA optimization uses:
+
+- Fixed population size
+- Fixed number of generations
+- Fixed evaluation procedure
+
+The total number of model evaluations is printed in the notebook output.
+Wall-clock time is recorded and displayed.
+All experiments are executed on the same NRP hardware configuration.
+
+---
+
 
 💡 **Important**:
 All reported results must come from running the project inside **NRP JupyterHub**.
