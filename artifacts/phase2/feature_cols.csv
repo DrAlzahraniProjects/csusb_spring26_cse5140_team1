@@ -1,0 +1,15 @@
+feature
+pickup_hour
+pickup_dow
+pickup_month
+hour_sin
+hour_cos
+dow_sin
+dow_cos
+delta_lat
+delta_lon
+haversine_km
+passenger_count
+store_and_fwd_Y
+vendor_1
+vendor_2
