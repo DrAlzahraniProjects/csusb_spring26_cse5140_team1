@@ -8,7 +8,7 @@ This project compares three different Artificial Intelligence methods to see how
 
 ---
 
-## Quick Start (For Graders)
+## Quick Start
 
 1. Log into NRP.ai.
 2. Launch PyTorch2 Jupyter environment.
