@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-03-24T03:58:18.639948",
-  "platform": "Linux-6.8.0-101-generic-x86_64-with-glibc2.31",
+  "timestamp": "2026-03-25T22:19:47.977444",
+  "platform": "Linux-6.8.0-100-generic-x86_64-with-glibc2.31",
   "python_version": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:08:06) [GCC 11.3.0]",
   "python_executable": "/opt/conda/bin/python",
   "torch_version": "2.0.0",
@@ -8,6 +8,6 @@
   "cuda_version": "11.7",
   "device": "cuda",
   "gpu_count": 2,
-  "gpu_name": "NVIDIA GeForce GTX 1080",
+  "gpu_name": "NVIDIA RTX A5000",
   "nrp_image_hint": "gitlab-registry.nrp-nautilus.io/prp/jupyter-stack/prp-pytorch2:v1.0"
 }
