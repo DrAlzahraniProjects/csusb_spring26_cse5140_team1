@@ -1,13 +1,14 @@
 {
-  "timestamp": "2026-03-25T22:19:47.977444",
+  "timestamp": "2026-03-30T05:08:58.028157",
   "platform": "Linux-6.8.0-100-generic-x86_64-with-glibc2.31",
   "python_version": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:08:06) [GCC 11.3.0]",
   "python_executable": "/opt/conda/bin/python",
-  "torch_version": "2.0.0",
-  "cuda_available": true,
-  "cuda_version": "11.7",
-  "device": "cuda",
+  "tensorflow_version": "2.11.0",
+  "device": "GPU",
   "gpu_count": 2,
-  "gpu_name": "NVIDIA RTX A5000",
+  "gpu_names": [
+    "/physical_device:GPU:0",
+    "/physical_device:GPU:1"
+  ],
   "nrp_image_hint": "gitlab-registry.nrp-nautilus.io/prp/jupyter-stack/prp-pytorch2:v1.0"
 }
