@@ -11,7 +11,7 @@ This project compares three different Artificial Intelligence methods to see how
 ## Quick Start
 
 1. Log into NRP.ai.
-2. Launch PyTorch2 Jupyter environment.
+2. Launch TensorFlow Jupyter environment.
 3. Clone this repository.
 4. Navigate to notebooks/.
 5. Run notebooks in this exact order:
@@ -36,11 +36,11 @@ Before you begin, ensure you have the following:
 
 - **[Git](https://git-scm.com/downloads)**: Install Git on your computer.
 - **[NRP.ai Account](https://nrp.ai/)**: Access to the instructor-managed namespace.
-- **[NRP Stack (PyTorch2 environment)](https://nrp.ai/)**: You must use the required PyTorch2 environment.
+- **[NRP Stack (TensorFlow environment)](https://nrp.ai/)**: You must use the required TensorFlow environment.
 - **[Linux/](https://ubuntu.com/download/desktop)[MacOS](https://www.apple.com/):** No extra setup needed.
 - **[Windows](https://www.microsoft.com/en-us/software-download/windows11)**: Use a modern browser to access NRP JupyterHub.
 
-All final experiments must be executed on **NRP JupyterHub using the required PyTorch2 stack**.  
+All final experiments must be executed on **NRP JupyterHub using the required TensorFlow stack**.  
 Docker is not used for this project.
 
 ---
@@ -49,7 +49,7 @@ Docker is not used for this project.
 
 1. Log in to **[NRP.ai](https://nrp.ai/)**.
 2. Select the **instructor-provided namespace**.
-3. Launch a Jupyter Notebook using the **NRP Stack PyTorch2 environment**.
+3. Launch a Jupyter Notebook using the **NRP Stack TensorFlow environment**.
 4. Open a **Terminal** inside JupyterLab.
 5. Clone the repository directly inside NRP:
 ```bash
@@ -149,7 +149,7 @@ Make sure that:
 
  ## Expected Runtime (NRP Environment)
 
-All experiments must be run on the NRP PyTorch2 stack.
+All experiments must be run on the NRP TensorFlow stack.
 
 Approximate runtime (may vary slightly):
 
@@ -191,5 +191,5 @@ This repository contains the complete and reproducible implementation for:
 CSE 5140 – **Computational Intelligence**
 Spring 2026
 
-All notebooks are designed to run fully on **NRP JupyterHub** using the **PyTorch2** stack.
+All notebooks are designed to run fully on **NRP JupyterHub** using the **TensorFlow** stack.
 
