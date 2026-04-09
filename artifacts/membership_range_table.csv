@@ -1,0 +1,8 @@
+variable,family,range,labels,membership_type,parameters,notes
+haversine_km,Spatial,0 to 30 km,short; medium; long,trap / tri / trap,"[0,0,1.5,4.0] | [2.5,7.5,12.5] | [10,16,30,30]",Primary distance variable; keep simple 3-set design
+pickup_hour,Temporal,0 to 23,early_morning; morning_rush; midday; evening_rush; night,trap / tri / tri / tri / trap,"[0,0,5,7] | [6,8,10] | [10,13,16] | [15,18,20] | [19,21,23,23]",5 sets justified by traffic patterns
+pickup_dow,Temporal,0 to 6,weekday; weekend,trap / trap,"[0,0,3.5,4.5] | [4.5,5,6,6]",Binary split is most interpretable
+delta_lat,Spatial,-0.20 to 0.20,south; neutral; north,tri / tri / tri,"[-0.20,-0.10,-0.01] | [-0.03,0.00,0.03] | [0.01,0.10,0.20]",Signed displacement
+delta_lon,Spatial,-0.20 to 0.20,west; neutral; east,tri / tri / tri,"[-0.20,-0.10,-0.01] | [-0.03,0.00,0.03] | [0.01,0.10,0.20]",Signed displacement
+passenger_count,Context,1 to 6,low; medium; high,trap / tri / trap,"[1,1,1.5,2] | [1.5,3,4.5] | [4,5,6,6]","Weak feature, compact design"
+predicted_duration,Output,0 to 5400 sec,very_short; short; medium; long; very_long,trap / tri / tri / tri / trap,"[0,0,180,420] | [240,600,960] | [780,1500,2280] | [1800,3000,4200] | [3600,4500,5400,5400]",5 output labels for readable predictions
