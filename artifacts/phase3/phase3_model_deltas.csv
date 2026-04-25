@@ -1,0 +1,3 @@
+Comparison,Delta_R2__FS_minus_reference,Delta_MAPE__FS_minus_reference,Delta_RMSE__FS_minus_reference,Delta_MAE__FS_minus_reference
+Fuzzy System vs Phase 1 NN,0.18224793114365512,18.619362779237925,-268.5106614200604,92.32563283629361
+Fuzzy System vs EA-Optimized NN,0.20836022350596717,14.866753819215155,-305.20273360150895,79.6793561549336

@@ -1,0 +1,2 @@
+rows,rmse_seconds,mae_seconds,r2,mape_percent,fallback_count,fallback_rate_percent,sample_mode
+150000,5922.924898287257,435.3767691115777,0.006222272190773204,51.39987548483783,0,0.0,full_validation

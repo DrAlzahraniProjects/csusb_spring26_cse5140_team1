@@ -1,0 +1,2 @@
+Model,R2,RMSE,MAE,MAPE,Runtime_sec,Fallback_Count,Fallback_Rate_Pct,Rule_Count,Average_Rule_Length,Max_Rule_Length
+Fuzzy System,0.021557735675741707,3011.6551800458747,412.3803559619936,51.13238572358689,4912.061536073685,0,0.0,28,2.0,3

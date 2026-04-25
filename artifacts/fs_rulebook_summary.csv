@@ -1,0 +1,7 @@
+rule_family,n_rules,avg_antecedent_count
+Family 1: Distance baseline,4,1.0
+Family 2: Distance + rush-hour traffic,8,2.0
+Family 3: Night / early-morning relief,6,2.0
+Family 4: Midday baseline,4,2.0
+Family 5: Weekend relief,2,2.0
+Family 8: 3-antecedent extremes,4,3.0

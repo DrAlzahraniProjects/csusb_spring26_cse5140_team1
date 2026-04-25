@@ -1,0 +1,4 @@
+Model,R2,RMSE,MAE,MAPE,Runtime_sec,Device,Evaluation_Count,Compute_Notes
+Fuzzy System,0.021557735675741707,3011.6551800458747,412.3803559619936,51.13238572358689,4912.061536073685,CPU / scikit-fuzzy inference,,28 fuzzy rules applied to the locked holdout split; fallback rate = 0.00%
+Phase 1 NN,-0.1606901954679134,3280.165841465935,320.0547231257,32.51302294434897,1793.95,CPU,20.0,"Validation-only hyperparameter search with 20 trials, followed by a saved-checkpoint reload for the final test pass."
+EA-Optimized NN,-0.18680248783022546,3316.8579136473836,332.70099980706,36.26563190437174,703.4045836925507,GPU,150.0,"Evolutionary search across 150 theoretical evaluations (105 unique in the saved run), then checkpoint reload for final scoring."

@@ -1,0 +1,26 @@
+variable,family,universe_range,term,membership_type,parameters,n_parameters,role_in_rules
+haversine_km,Spatial,0 to 30 km,long,trap,"[7.0, 13.0, 30.0, 30.0]",4,Core baseline driver (4-MF exception to 3-MF rule)
+haversine_km,Spatial,0 to 30 km,medium,tri,"[3.0, 5.5, 10.0]",3,Core baseline driver (4-MF exception to 3-MF rule)
+haversine_km,Spatial,0 to 30 km,medium_short,tri,"[1.2, 2.5, 4.5]",3,Core baseline driver (4-MF exception to 3-MF rule)
+haversine_km,Spatial,0 to 30 km,short,trap,"[0, 0, 1.0, 2.0]",4,Core baseline driver (4-MF exception to 3-MF rule)
+pickup_hour,Temporal,0 to 23,early_morning,trap,"[0, 0, 5, 7]",4,Traffic-pattern modifier
+pickup_hour,Temporal,0 to 23,evening_rush,tri,"[15, 18, 20]",3,Traffic-pattern modifier
+pickup_hour,Temporal,0 to 23,midday,tri,"[10, 13, 16]",3,Traffic-pattern modifier
+pickup_hour,Temporal,0 to 23,morning_rush,tri,"[6, 8, 10]",3,Traffic-pattern modifier
+pickup_hour,Temporal,0 to 23,night,trap,"[19, 21, 23, 23]",4,Traffic-pattern modifier
+pickup_dow,Temporal,0 to 6,weekday,trap,"[0, 0, 3.5, 4.5]",4,Day-type modifier
+pickup_dow,Temporal,0 to 6,weekend,trap,"[4.5, 5.0, 6.0, 6.0]",4,Day-type modifier
+delta_lat,Spatial,-0.20 to 0.20,neutral,tri,"[-0.03, 0.0, 0.03]",3,North/south directional modifier
+delta_lat,Spatial,-0.20 to 0.20,north,tri,"[0.01, 0.1, 0.2]",3,North/south directional modifier
+delta_lat,Spatial,-0.20 to 0.20,south,tri,"[-0.2, -0.1, -0.01]",3,North/south directional modifier
+delta_lon,Spatial,-0.20 to 0.20,east,tri,"[0.01, 0.1, 0.2]",3,East/west directional modifier
+delta_lon,Spatial,-0.20 to 0.20,neutral,tri,"[-0.03, 0.0, 0.03]",3,East/west directional modifier
+delta_lon,Spatial,-0.20 to 0.20,west,tri,"[-0.2, -0.1, -0.01]",3,East/west directional modifier
+passenger_count,Context,1 to 6,high,trap,"[4.0, 5.0, 6.0, 6.0]",4,Sparse tie-breaker context variable
+passenger_count,Context,1 to 6,low,trap,"[1.0, 1.0, 1.5, 2.0]",4,Sparse tie-breaker context variable
+passenger_count,Context,1 to 6,medium,tri,"[1.5, 3.0, 4.5]",3,Sparse tie-breaker context variable
+predicted_duration,Output,0 to 5400 sec,long,tri,"[1400, 2100, 3000]",3,Consequent space
+predicted_duration,Output,0 to 5400 sec,medium,tri,"[700, 1100, 1700]",3,Consequent space
+predicted_duration,Output,0 to 5400 sec,short,tri,"[180, 550, 1000]",3,Consequent space
+predicted_duration,Output,0 to 5400 sec,very_long,trap,"[2500, 3500, 5400, 5400]",4,Consequent space
+predicted_duration,Output,0 to 5400 sec,very_short,trap,"[0, 0, 200, 450]",4,Consequent space
