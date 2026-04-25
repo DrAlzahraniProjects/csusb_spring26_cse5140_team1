@@ -1,0 +1,254 @@
+[
+  {
+    "rule_id":1,
+    "rule_label":"r01_dist_short",
+    "rule_family":"Family 1: Distance baseline",
+    "antecedent_count":1,
+    "antecedent_text":"haversine_km[short]",
+    "consequent_text":"[predicted_duration[very_short]]",
+    "full_rule_text":"IF haversine_km[short] THEN [predicted_duration[very_short]]"
+  },
+  {
+    "rule_id":2,
+    "rule_label":"r02_dist_medium_short",
+    "rule_family":"Family 1: Distance baseline",
+    "antecedent_count":1,
+    "antecedent_text":"haversine_km[medium_short]",
+    "consequent_text":"[predicted_duration[short]]",
+    "full_rule_text":"IF haversine_km[medium_short] THEN [predicted_duration[short]]"
+  },
+  {
+    "rule_id":3,
+    "rule_label":"r03_dist_medium",
+    "rule_family":"Family 1: Distance baseline",
+    "antecedent_count":1,
+    "antecedent_text":"haversine_km[medium]",
+    "consequent_text":"[predicted_duration[medium]]",
+    "full_rule_text":"IF haversine_km[medium] THEN [predicted_duration[medium]]"
+  },
+  {
+    "rule_id":4,
+    "rule_label":"r04_dist_long",
+    "rule_family":"Family 1: Distance baseline",
+    "antecedent_count":1,
+    "antecedent_text":"haversine_km[long]",
+    "consequent_text":"[predicted_duration[long]]",
+    "full_rule_text":"IF haversine_km[long] THEN [predicted_duration[long]]"
+  },
+  {
+    "rule_id":5,
+    "rule_label":"r05_short_morning_rush",
+    "rule_family":"Family 2: Distance + rush-hour traffic",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[short] AND pickup_hour[morning_rush]",
+    "consequent_text":"[predicted_duration[short]]",
+    "full_rule_text":"IF haversine_km[short] AND pickup_hour[morning_rush] THEN [predicted_duration[short]]"
+  },
+  {
+    "rule_id":6,
+    "rule_label":"r06_mshort_morning_rush",
+    "rule_family":"Family 2: Distance + rush-hour traffic",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[medium_short] AND pickup_hour[morning_rush]",
+    "consequent_text":"[predicted_duration[medium]]",
+    "full_rule_text":"IF haversine_km[medium_short] AND pickup_hour[morning_rush] THEN [predicted_duration[medium]]"
+  },
+  {
+    "rule_id":7,
+    "rule_label":"r07_medium_morning_rush",
+    "rule_family":"Family 2: Distance + rush-hour traffic",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[medium] AND pickup_hour[morning_rush]",
+    "consequent_text":"[predicted_duration[medium]]",
+    "full_rule_text":"IF haversine_km[medium] AND pickup_hour[morning_rush] THEN [predicted_duration[medium]]"
+  },
+  {
+    "rule_id":8,
+    "rule_label":"r08_long_morning_rush",
+    "rule_family":"Family 2: Distance + rush-hour traffic",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[long] AND pickup_hour[morning_rush]",
+    "consequent_text":"[predicted_duration[long]]",
+    "full_rule_text":"IF haversine_km[long] AND pickup_hour[morning_rush] THEN [predicted_duration[long]]"
+  },
+  {
+    "rule_id":9,
+    "rule_label":"r09_short_evening_rush",
+    "rule_family":"Family 2: Distance + rush-hour traffic",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[short] AND pickup_hour[evening_rush]",
+    "consequent_text":"[predicted_duration[short]]",
+    "full_rule_text":"IF haversine_km[short] AND pickup_hour[evening_rush] THEN [predicted_duration[short]]"
+  },
+  {
+    "rule_id":10,
+    "rule_label":"r10_mshort_evening_rush",
+    "rule_family":"Family 2: Distance + rush-hour traffic",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[medium_short] AND pickup_hour[evening_rush]",
+    "consequent_text":"[predicted_duration[medium]]",
+    "full_rule_text":"IF haversine_km[medium_short] AND pickup_hour[evening_rush] THEN [predicted_duration[medium]]"
+  },
+  {
+    "rule_id":11,
+    "rule_label":"r11_medium_evening_rush",
+    "rule_family":"Family 2: Distance + rush-hour traffic",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[medium] AND pickup_hour[evening_rush]",
+    "consequent_text":"[predicted_duration[medium]]",
+    "full_rule_text":"IF haversine_km[medium] AND pickup_hour[evening_rush] THEN [predicted_duration[medium]]"
+  },
+  {
+    "rule_id":12,
+    "rule_label":"r12_long_evening_rush",
+    "rule_family":"Family 2: Distance + rush-hour traffic",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[long] AND pickup_hour[evening_rush]",
+    "consequent_text":"[predicted_duration[long]]",
+    "full_rule_text":"IF haversine_km[long] AND pickup_hour[evening_rush] THEN [predicted_duration[long]]"
+  },
+  {
+    "rule_id":13,
+    "rule_label":"r13_short_night",
+    "rule_family":"Family 3: Night \/ early-morning relief",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[short] AND pickup_hour[night]",
+    "consequent_text":"[predicted_duration[very_short]]",
+    "full_rule_text":"IF haversine_km[short] AND pickup_hour[night] THEN [predicted_duration[very_short]]"
+  },
+  {
+    "rule_id":14,
+    "rule_label":"r14_mshort_night",
+    "rule_family":"Family 3: Night \/ early-morning relief",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[medium_short] AND pickup_hour[night]",
+    "consequent_text":"[predicted_duration[very_short]]",
+    "full_rule_text":"IF haversine_km[medium_short] AND pickup_hour[night] THEN [predicted_duration[very_short]]"
+  },
+  {
+    "rule_id":15,
+    "rule_label":"r15_medium_night",
+    "rule_family":"Family 3: Night \/ early-morning relief",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[medium] AND pickup_hour[night]",
+    "consequent_text":"[predicted_duration[short]]",
+    "full_rule_text":"IF haversine_km[medium] AND pickup_hour[night] THEN [predicted_duration[short]]"
+  },
+  {
+    "rule_id":16,
+    "rule_label":"r16_long_night",
+    "rule_family":"Family 3: Night \/ early-morning relief",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[long] AND pickup_hour[night]",
+    "consequent_text":"[predicted_duration[medium]]",
+    "full_rule_text":"IF haversine_km[long] AND pickup_hour[night] THEN [predicted_duration[medium]]"
+  },
+  {
+    "rule_id":17,
+    "rule_label":"r17_mshort_early",
+    "rule_family":"Family 3: Night \/ early-morning relief",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[medium_short] AND pickup_hour[early_morning]",
+    "consequent_text":"[predicted_duration[very_short]]",
+    "full_rule_text":"IF haversine_km[medium_short] AND pickup_hour[early_morning] THEN [predicted_duration[very_short]]"
+  },
+  {
+    "rule_id":18,
+    "rule_label":"r18_long_early",
+    "rule_family":"Family 3: Night \/ early-morning relief",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[long] AND pickup_hour[early_morning]",
+    "consequent_text":"[predicted_duration[medium]]",
+    "full_rule_text":"IF haversine_km[long] AND pickup_hour[early_morning] THEN [predicted_duration[medium]]"
+  },
+  {
+    "rule_id":19,
+    "rule_label":"r19_short_midday",
+    "rule_family":"Family 4: Midday baseline",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[short] AND pickup_hour[midday]",
+    "consequent_text":"[predicted_duration[very_short]]",
+    "full_rule_text":"IF haversine_km[short] AND pickup_hour[midday] THEN [predicted_duration[very_short]]"
+  },
+  {
+    "rule_id":20,
+    "rule_label":"r20_mshort_midday",
+    "rule_family":"Family 4: Midday baseline",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[medium_short] AND pickup_hour[midday]",
+    "consequent_text":"[predicted_duration[short]]",
+    "full_rule_text":"IF haversine_km[medium_short] AND pickup_hour[midday] THEN [predicted_duration[short]]"
+  },
+  {
+    "rule_id":21,
+    "rule_label":"r21_medium_midday",
+    "rule_family":"Family 4: Midday baseline",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[medium] AND pickup_hour[midday]",
+    "consequent_text":"[predicted_duration[medium]]",
+    "full_rule_text":"IF haversine_km[medium] AND pickup_hour[midday] THEN [predicted_duration[medium]]"
+  },
+  {
+    "rule_id":22,
+    "rule_label":"r22_long_midday",
+    "rule_family":"Family 4: Midday baseline",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[long] AND pickup_hour[midday]",
+    "consequent_text":"[predicted_duration[long]]",
+    "full_rule_text":"IF haversine_km[long] AND pickup_hour[midday] THEN [predicted_duration[long]]"
+  },
+  {
+    "rule_id":23,
+    "rule_label":"r23_medium_weekend",
+    "rule_family":"Family 5: Weekend relief",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[medium] AND pickup_dow[weekend]",
+    "consequent_text":"[predicted_duration[short]]",
+    "full_rule_text":"IF haversine_km[medium] AND pickup_dow[weekend] THEN [predicted_duration[short]]"
+  },
+  {
+    "rule_id":24,
+    "rule_label":"r24_long_weekend",
+    "rule_family":"Family 5: Weekend relief",
+    "antecedent_count":2,
+    "antecedent_text":"haversine_km[long] AND pickup_dow[weekend]",
+    "consequent_text":"[predicted_duration[medium]]",
+    "full_rule_text":"IF haversine_km[long] AND pickup_dow[weekend] THEN [predicted_duration[medium]]"
+  },
+  {
+    "rule_id":25,
+    "rule_label":"r25_long_weekday_morning_rush",
+    "rule_family":"Family 8: 3-antecedent extremes",
+    "antecedent_count":3,
+    "antecedent_text":"(haversine_km[long] AND pickup_dow[weekday]) AND pickup_hour[morning_rush]",
+    "consequent_text":"[predicted_duration[very_long]]",
+    "full_rule_text":"IF (haversine_km[long] AND pickup_dow[weekday]) AND pickup_hour[morning_rush] THEN [predicted_duration[very_long]]"
+  },
+  {
+    "rule_id":26,
+    "rule_label":"r26_long_weekday_evening_rush",
+    "rule_family":"Family 8: 3-antecedent extremes",
+    "antecedent_count":3,
+    "antecedent_text":"(haversine_km[long] AND pickup_dow[weekday]) AND pickup_hour[evening_rush]",
+    "consequent_text":"[predicted_duration[very_long]]",
+    "full_rule_text":"IF (haversine_km[long] AND pickup_dow[weekday]) AND pickup_hour[evening_rush] THEN [predicted_duration[very_long]]"
+  },
+  {
+    "rule_id":27,
+    "rule_label":"r27_medium_weekday_morning_rush",
+    "rule_family":"Family 8: 3-antecedent extremes",
+    "antecedent_count":3,
+    "antecedent_text":"(haversine_km[medium] AND pickup_dow[weekday]) AND pickup_hour[morning_rush]",
+    "consequent_text":"[predicted_duration[long]]",
+    "full_rule_text":"IF (haversine_km[medium] AND pickup_dow[weekday]) AND pickup_hour[morning_rush] THEN [predicted_duration[long]]"
+  },
+  {
+    "rule_id":28,
+    "rule_label":"r28_medium_weekday_evening_rush",
+    "rule_family":"Family 8: 3-antecedent extremes",
+    "antecedent_count":3,
+    "antecedent_text":"(haversine_km[medium] AND pickup_dow[weekday]) AND pickup_hour[evening_rush]",
+    "consequent_text":"[predicted_duration[long]]",
+    "full_rule_text":"IF (haversine_km[medium] AND pickup_dow[weekday]) AND pickup_hour[evening_rush] THEN [predicted_duration[long]]"
+  }
+]

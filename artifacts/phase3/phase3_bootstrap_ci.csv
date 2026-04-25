@@ -1,0 +1,5 @@
+Comparison,Metric,Mean,CI_2.5%,CI_97.5%,Supports_FS_Advantage,Interpretation
+Fuzzy System vs Phase 1 NN,Delta_R2__FS_minus_reference,0.18512396127762518,-0.013398111856211615,0.5624311714270794,False,Positive values favor the fuzzy system.
+Fuzzy System vs Phase 1 NN,Delta_MAPE__FS_minus_reference,18.599642672162357,17.710994736443713,19.586128424549884,False,Negative values favor the fuzzy system.
+Fuzzy System vs EA-Optimized NN,Delta_R2__FS_minus_reference,0.20159381932243553,-0.013172061461713219,0.5336318996747696,False,Positive values favor the fuzzy system.
+Fuzzy System vs EA-Optimized NN,Delta_MAPE__FS_minus_reference,14.862748467823288,13.984638948116523,15.784951829499985,False,Negative values favor the fuzzy system.

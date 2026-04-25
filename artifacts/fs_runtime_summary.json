@@ -1,0 +1,24 @@
+[
+  {
+    "phase":"Phase 3",
+    "step":"Step 2",
+    "component":"Fuzzy System Validation Run",
+    "sample_mode":"full_validation",
+    "sample_size":150000,
+    "runtime_seconds":2938.1132068634,
+    "runtime_minutes":48.9685534477,
+    "runtime_hours":0.8161425575,
+    "rows_per_second":51.0531723725,
+    "seconds_per_row":0.0195874214,
+    "rule_count":28,
+    "active_input_count":3,
+    "active_inputs":"haversine_km, pickup_dow, pickup_hour",
+    "fallback_duration_seconds":662.0,
+    "fallback_count":0,
+    "fallback_rate_percent":0.0,
+    "rmse_seconds":5922.9248982873,
+    "mae_seconds":435.3767691116,
+    "r2":0.0062222722,
+    "mape_percent":51.3998754848
+  }
+]

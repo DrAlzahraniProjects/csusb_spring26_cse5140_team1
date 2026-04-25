@@ -1,0 +1,8 @@
+variable,family,universe_range,role_in_rules,n_sets,terms,membership_types
+delta_lat,Spatial,-0.20 to 0.20,North/south directional modifier,3,"neutral, north, south","tri, tri, tri"
+delta_lon,Spatial,-0.20 to 0.20,East/west directional modifier,3,"east, neutral, west","tri, tri, tri"
+haversine_km,Spatial,0 to 30 km,Core baseline driver (4-MF exception to 3-MF rule),4,"long, medium, medium_short, short","trap, tri, tri, trap"
+passenger_count,Context,1 to 6,Sparse tie-breaker context variable,3,"high, low, medium","trap, trap, tri"
+pickup_dow,Temporal,0 to 6,Day-type modifier,2,"weekday, weekend","trap, trap"
+pickup_hour,Temporal,0 to 23,Traffic-pattern modifier,5,"early_morning, evening_rush, midday, morning_rush, night","trap, tri, tri, tri, trap"
+predicted_duration,Output,0 to 5400 sec,Consequent space,5,"long, medium, short, very_long, very_short","tri, tri, tri, trap, trap"

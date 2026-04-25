@@ -1,0 +1,252 @@
+[
+  {
+    "variable":"haversine_km",
+    "family":"Spatial",
+    "universe_range":"0 to 30 km",
+    "term":"long",
+    "membership_type":"trap",
+    "parameters":"[7.0, 13.0, 30.0, 30.0]",
+    "n_parameters":4,
+    "role_in_rules":"Core baseline driver (4-MF exception to 3-MF rule)"
+  },
+  {
+    "variable":"haversine_km",
+    "family":"Spatial",
+    "universe_range":"0 to 30 km",
+    "term":"medium",
+    "membership_type":"tri",
+    "parameters":"[3.0, 5.5, 10.0]",
+    "n_parameters":3,
+    "role_in_rules":"Core baseline driver (4-MF exception to 3-MF rule)"
+  },
+  {
+    "variable":"haversine_km",
+    "family":"Spatial",
+    "universe_range":"0 to 30 km",
+    "term":"medium_short",
+    "membership_type":"tri",
+    "parameters":"[1.2, 2.5, 4.5]",
+    "n_parameters":3,
+    "role_in_rules":"Core baseline driver (4-MF exception to 3-MF rule)"
+  },
+  {
+    "variable":"haversine_km",
+    "family":"Spatial",
+    "universe_range":"0 to 30 km",
+    "term":"short",
+    "membership_type":"trap",
+    "parameters":"[0, 0, 1.0, 2.0]",
+    "n_parameters":4,
+    "role_in_rules":"Core baseline driver (4-MF exception to 3-MF rule)"
+  },
+  {
+    "variable":"pickup_hour",
+    "family":"Temporal",
+    "universe_range":"0 to 23",
+    "term":"early_morning",
+    "membership_type":"trap",
+    "parameters":"[0, 0, 5, 7]",
+    "n_parameters":4,
+    "role_in_rules":"Traffic-pattern modifier"
+  },
+  {
+    "variable":"pickup_hour",
+    "family":"Temporal",
+    "universe_range":"0 to 23",
+    "term":"evening_rush",
+    "membership_type":"tri",
+    "parameters":"[15, 18, 20]",
+    "n_parameters":3,
+    "role_in_rules":"Traffic-pattern modifier"
+  },
+  {
+    "variable":"pickup_hour",
+    "family":"Temporal",
+    "universe_range":"0 to 23",
+    "term":"midday",
+    "membership_type":"tri",
+    "parameters":"[10, 13, 16]",
+    "n_parameters":3,
+    "role_in_rules":"Traffic-pattern modifier"
+  },
+  {
+    "variable":"pickup_hour",
+    "family":"Temporal",
+    "universe_range":"0 to 23",
+    "term":"morning_rush",
+    "membership_type":"tri",
+    "parameters":"[6, 8, 10]",
+    "n_parameters":3,
+    "role_in_rules":"Traffic-pattern modifier"
+  },
+  {
+    "variable":"pickup_hour",
+    "family":"Temporal",
+    "universe_range":"0 to 23",
+    "term":"night",
+    "membership_type":"trap",
+    "parameters":"[19, 21, 23, 23]",
+    "n_parameters":4,
+    "role_in_rules":"Traffic-pattern modifier"
+  },
+  {
+    "variable":"pickup_dow",
+    "family":"Temporal",
+    "universe_range":"0 to 6",
+    "term":"weekday",
+    "membership_type":"trap",
+    "parameters":"[0, 0, 3.5, 4.5]",
+    "n_parameters":4,
+    "role_in_rules":"Day-type modifier"
+  },
+  {
+    "variable":"pickup_dow",
+    "family":"Temporal",
+    "universe_range":"0 to 6",
+    "term":"weekend",
+    "membership_type":"trap",
+    "parameters":"[4.5, 5.0, 6.0, 6.0]",
+    "n_parameters":4,
+    "role_in_rules":"Day-type modifier"
+  },
+  {
+    "variable":"delta_lat",
+    "family":"Spatial",
+    "universe_range":"-0.20 to 0.20",
+    "term":"neutral",
+    "membership_type":"tri",
+    "parameters":"[-0.03, 0.0, 0.03]",
+    "n_parameters":3,
+    "role_in_rules":"North\/south directional modifier"
+  },
+  {
+    "variable":"delta_lat",
+    "family":"Spatial",
+    "universe_range":"-0.20 to 0.20",
+    "term":"north",
+    "membership_type":"tri",
+    "parameters":"[0.01, 0.1, 0.2]",
+    "n_parameters":3,
+    "role_in_rules":"North\/south directional modifier"
+  },
+  {
+    "variable":"delta_lat",
+    "family":"Spatial",
+    "universe_range":"-0.20 to 0.20",
+    "term":"south",
+    "membership_type":"tri",
+    "parameters":"[-0.2, -0.1, -0.01]",
+    "n_parameters":3,
+    "role_in_rules":"North\/south directional modifier"
+  },
+  {
+    "variable":"delta_lon",
+    "family":"Spatial",
+    "universe_range":"-0.20 to 0.20",
+    "term":"east",
+    "membership_type":"tri",
+    "parameters":"[0.01, 0.1, 0.2]",
+    "n_parameters":3,
+    "role_in_rules":"East\/west directional modifier"
+  },
+  {
+    "variable":"delta_lon",
+    "family":"Spatial",
+    "universe_range":"-0.20 to 0.20",
+    "term":"neutral",
+    "membership_type":"tri",
+    "parameters":"[-0.03, 0.0, 0.03]",
+    "n_parameters":3,
+    "role_in_rules":"East\/west directional modifier"
+  },
+  {
+    "variable":"delta_lon",
+    "family":"Spatial",
+    "universe_range":"-0.20 to 0.20",
+    "term":"west",
+    "membership_type":"tri",
+    "parameters":"[-0.2, -0.1, -0.01]",
+    "n_parameters":3,
+    "role_in_rules":"East\/west directional modifier"
+  },
+  {
+    "variable":"passenger_count",
+    "family":"Context",
+    "universe_range":"1 to 6",
+    "term":"high",
+    "membership_type":"trap",
+    "parameters":"[4.0, 5.0, 6.0, 6.0]",
+    "n_parameters":4,
+    "role_in_rules":"Sparse tie-breaker context variable"
+  },
+  {
+    "variable":"passenger_count",
+    "family":"Context",
+    "universe_range":"1 to 6",
+    "term":"low",
+    "membership_type":"trap",
+    "parameters":"[1.0, 1.0, 1.5, 2.0]",
+    "n_parameters":4,
+    "role_in_rules":"Sparse tie-breaker context variable"
+  },
+  {
+    "variable":"passenger_count",
+    "family":"Context",
+    "universe_range":"1 to 6",
+    "term":"medium",
+    "membership_type":"tri",
+    "parameters":"[1.5, 3.0, 4.5]",
+    "n_parameters":3,
+    "role_in_rules":"Sparse tie-breaker context variable"
+  },
+  {
+    "variable":"predicted_duration",
+    "family":"Output",
+    "universe_range":"0 to 5400 sec",
+    "term":"long",
+    "membership_type":"tri",
+    "parameters":"[1400, 2100, 3000]",
+    "n_parameters":3,
+    "role_in_rules":"Consequent space"
+  },
+  {
+    "variable":"predicted_duration",
+    "family":"Output",
+    "universe_range":"0 to 5400 sec",
+    "term":"medium",
+    "membership_type":"tri",
+    "parameters":"[700, 1100, 1700]",
+    "n_parameters":3,
+    "role_in_rules":"Consequent space"
+  },
+  {
+    "variable":"predicted_duration",
+    "family":"Output",
+    "universe_range":"0 to 5400 sec",
+    "term":"short",
+    "membership_type":"tri",
+    "parameters":"[180, 550, 1000]",
+    "n_parameters":3,
+    "role_in_rules":"Consequent space"
+  },
+  {
+    "variable":"predicted_duration",
+    "family":"Output",
+    "universe_range":"0 to 5400 sec",
+    "term":"very_long",
+    "membership_type":"trap",
+    "parameters":"[2500, 3500, 5400, 5400]",
+    "n_parameters":4,
+    "role_in_rules":"Consequent space"
+  },
+  {
+    "variable":"predicted_duration",
+    "family":"Output",
+    "universe_range":"0 to 5400 sec",
+    "term":"very_short",
+    "membership_type":"trap",
+    "parameters":"[0, 0, 200, 450]",
+    "n_parameters":4,
+    "role_in_rules":"Consequent space"
+  }
+]

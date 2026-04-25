@@ -1,0 +1,2 @@
+phase,step,component,sample_mode,sample_size,runtime_seconds,runtime_minutes,runtime_hours,rows_per_second,seconds_per_row,rule_count,active_input_count,active_inputs,fallback_duration_seconds,fallback_count,fallback_rate_percent,rmse_seconds,mae_seconds,r2,mape_percent
+Phase 3,Step 2,Fuzzy System Validation Run,full_validation,150000,2938.1132068634033,48.96855344772339,0.8161425574620564,51.053172372528564,0.019587421379089354,28,3,"haversine_km, pickup_dow, pickup_hour",662.0,0,0.0,5922.924898287257,435.3767691115777,0.006222272190773204,51.39987548483783
