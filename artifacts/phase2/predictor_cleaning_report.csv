@@ -1,0 +1,5 @@
+rule,removed_rows,rows_remaining_after_rule
+invalid_pickup_latlon_global,0,1000000
+invalid_dropoff_latlon_global,0,1000000
+pickup_outside_nyc_bbox,211,999789
+dropoff_outside_nyc_bbox,693,999096
