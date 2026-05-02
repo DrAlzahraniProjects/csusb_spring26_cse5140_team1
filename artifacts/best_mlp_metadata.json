@@ -1,6 +1,6 @@
 {
   "saved_path": "../artifacts/best_mlp_model.keras",
-  "timestamp": "2026-03-29T23:25:39.040080",
+  "timestamp": "2026-05-02T01:38:02.905213",
   "model_cfg": {
     "in_dim": 14,
     "layers": [
@@ -71,10 +71,11 @@
     "batch_size": 4096,
     "epochs_cap": 25,
     "patience": 4,
-    "best_val_rmse_log": 0.4526830315589905,
-    "val_rmse": 5912.880492929619,
-    "val_mae": 345.1567525493876,
-    "val_r2": 0.009590014509224143,
+    "best_val_rmse_log": 0.45268556475639343,
+    "val_rmse_log": 0.4526855650448195,
+    "val_rmse": 5912.8552073072615,
+    "val_mae": 345.00904738845827,
+    "val_r2": 0.009598485196008921,
     "history_csv": "../artifacts/trial_logs/trial_20_history.csv"
   }
 }

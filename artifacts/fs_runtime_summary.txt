@@ -2,10 +2,10 @@ FS Step 2 Runtime Summary
 =========================
 Sample mode: full_validation
 Rows processed: 150,000
-Runtime (seconds): 2938.11
-Runtime (minutes): 48.97
-Rows per second: 51.05
-Seconds per row: 0.019587
+Runtime (seconds): 1428.52
+Runtime (minutes): 23.81
+Rows per second: 105.00
+Seconds per row: 0.009523
 Rule count: 28
 Active inputs: haversine_km, pickup_dow, pickup_hour
 Fallback count: 0

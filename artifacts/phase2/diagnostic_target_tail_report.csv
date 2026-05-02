@@ -1,0 +1,2 @@
+lower_q,upper_q,lower_bound_seconds,upper_bound_seconds,rows_before,rows_after,rows_removed,pct_removed
+0.005,0.995,52.0,4121.0,999096,989114,9982,0.9991031892831119

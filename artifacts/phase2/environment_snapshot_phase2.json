@@ -1,14 +1,13 @@
 {
-  "timestamp": "2026-03-30T05:08:58.028157",
+  "timestamp": "2026-05-02T02:17:33.056838",
   "platform": "Linux-6.8.0-100-generic-x86_64-with-glibc2.31",
   "python_version": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:08:06) [GCC 11.3.0]",
   "python_executable": "/opt/conda/bin/python",
   "tensorflow_version": "2.11.0",
   "device": "GPU",
-  "gpu_count": 2,
+  "gpu_count": 1,
   "gpu_names": [
-    "/physical_device:GPU:0",
-    "/physical_device:GPU:1"
+    "/physical_device:GPU:0"
   ],
   "nrp_image_hint": "gitlab-registry.nrp-nautilus.io/prp/jupyter-stack/prp-pytorch2:v1.0"
 }

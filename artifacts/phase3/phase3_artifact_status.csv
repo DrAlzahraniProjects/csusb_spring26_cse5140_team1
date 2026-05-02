@@ -1,4 +1,4 @@
 Model,Rows,Prediction_File,Source_Mode
-Fuzzy System,150000,../artifacts/phase3/phase3_fs_test_predictions.csv,generated from locked fuzzy rules in this notebook
+Fuzzy System,150000,../artifacts/phase3/phase3_fs_test_predictions.csv,loaded existing prediction artifact
 Phase 1 NN,150000,../artifacts/phase1_nn_test_predictions.csv,loaded existing prediction artifact
 EA-Optimized NN,150000,../artifacts/phase2/phase2_ea_test_predictions.csv,loaded existing prediction artifact
